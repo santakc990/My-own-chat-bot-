@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PixelFace Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <aside class="side">
+      <canvas id="avatar" width="64" height="64"></canvas>
+      <div class="state" id="state">idle</div>
+    </aside>
+
+    <main class="chat">
+      <header>
+        <h1>PixelFace Chatbot</h1>
+        <p class="sub">A tiny rule‑based bot with a reactive pixel avatar.</p>
+      </header>
+      <section id="log" class="log"></section>
+      <footer class="inputrow">
+        <input id="input" placeholder="Type a message…" autocomplete="off" />
+        <button id="send">Send</button>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
